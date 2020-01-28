@@ -12,7 +12,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -41,20 +41,32 @@
 .navlinks {
   list-style: none;
   background: #ffffff;
-  padding: 1rem;
   margin: .8rem 2rem;
 }
 
 .navlinks li {
   width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.navlinks li a {
-  display: block;
+.navlinks li:hover {
+  background: #333333;
+}
+
+.navlinks li:hover a {
+  padding-left: 3rem;
+  color: #f0542c;
+}
+
+.navlinks a {
   padding: .7rem;
+  display: block;
   text-decoration: none;
   font-size: 1.5rem;
   color: #333333;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 header {

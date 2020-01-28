@@ -7,11 +7,24 @@ $primary-fontColor:#333333;
 $font-text: 'Roboto', sans-serif;
 $font-title:'Libre Baskerville', serif;
 $font-cursive: 'Courgette', cursive;
+$main-transition: all 2s ease;
+$semi-transition: all 1s;
 
+// mixins
+@mixin alinks{
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: $primary-fontColor;
+  transition: $semi-transition;
+
+}
+
+//  logo and button
 .nav-litle{
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   align-items: center;
 
   .logo-box{
@@ -33,24 +46,35 @@ $font-cursive: 'Courgette', cursive;
     color:$primary-white;
   }
 }
+//  end logo and button
+
+// navLinks 
 
 .navlinks{
   list-style: none;
   background: $primary-white;
-  padding: 1rem;
+  // padding: 1rem;
   margin: .8rem 2rem;
- 
+
   li{
-    width: 100%;
-    a{
-      display: block;
-      padding: .7rem;
-      text-decoration: none;
-      font-size: 1.5rem;
-      color: $primary-fontColor;
+    width: 100%; 
+    transition: $semi-transition;
+    &:hover{
+      background: $primary-fontColor ;
+        a{
+          padding-left: 3rem;
+          color: $primary-color;
+        }
+      }
+    }
+      a{
+      padding:.7rem;
+      // includes anchor tag mixin
+         @include alinks;
 
     }
-  }
+   } 
   
 
-}
+
+  
