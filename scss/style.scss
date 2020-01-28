@@ -14,9 +14,13 @@ $font-cursive: 'Courgette', cursive;
   box-sizing: border-box;
 }
 
-@use 'navbar';
+@import 'navbar';
+
 header{
   background: url('../images/headerbcg-1.jpg')center/cover fixed no-repeat;
  width: 100%;
  height: 100vh;
+
+
 }
+

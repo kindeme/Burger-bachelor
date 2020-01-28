@@ -5,7 +5,58 @@
           box-sizing: border-box;
 }
 
-@use 'navbar';
+.nav-litle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-litle .logo-box {
+  width: 5rem;
+  border-radius: 5px;
+  background: #f0542c;
+  text-align: center;
+}
+
+.nav-litle .logo-box .logo {
+  width: 3.5rem;
+  width: 3rem;
+}
+
+.nav-litle .nav-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.navlinks {
+  list-style: none;
+  background: #ffffff;
+  padding: 1rem;
+  margin: .8rem 2rem;
+}
+
+.navlinks li {
+  width: 100%;
+}
+
+.navlinks li a {
+  display: block;
+  padding: .7rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
 header {
   background: url("../images/headerbcg-1.jpg") center/cover fixed no-repeat;
   width: 100%;
