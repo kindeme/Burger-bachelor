@@ -213,6 +213,24 @@
   }
 }
 
+.menu {
+  background: url("../images/menubcg.jpg") center/cover no-repeat;
+  width: 100%;
+}
+
+.menu .menu-center {
+  text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.menu .show-menu {
+  font-family: "Courgette", cursive;
+  color: #f2c64d;
+  font-size: 2rem;
+}
+
 *, ::after, ::before {
   padding: 0;
   margin: 0;
