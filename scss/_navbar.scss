@@ -10,13 +10,14 @@ $font-cursive: 'Courgette', cursive;
 $main-transition: all 2s ease;
 $semi-transition: all 1s;
 
-// mixins
+// mixins for alink
 @mixin alinks{
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
   color: $primary-fontColor;
   transition: $semi-transition;
+  font-family: $font-text;
 
 }
 
@@ -42,9 +43,24 @@ $semi-transition: all 1s;
   }
   .nav-button{
     align-self:center;
-    font-size: 2.5rem;
-    color:$primary-white;
   }
+  .bar1,.bar2,.bar3{
+    width: 30px;
+    height: 4px;
+    background: $primary-white;
+    border-radius: 2px;
+    margin: 10px;
+ 
+}
+.change.bar1{
+  transform: translate(-10px,10px) rotate(45deg);
+}
+.change.bar2{
+  opacity: 0;
+}
+.change.bar3{
+  transform: translate(-8px,-7px) rotate(-45deg);
+}
 }
 //  end logo and button
 
@@ -71,9 +87,18 @@ $semi-transition: all 1s;
       padding:.7rem;
       // includes anchor tag mixin
          @include alinks;
-
     }
    } 
+   .nav-icons{
+     display: none;
+   }
+   .number{
+     display: none;
+   }
+   .btn-directions{
+     display: none;
+   }
+   
   
 
 
