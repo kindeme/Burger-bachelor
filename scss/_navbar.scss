@@ -11,13 +11,13 @@ $main-transition: all 2s ease;
 $semi-transition: all 1s;
 
 // mixins for alink
-@mixin alinks{
+@mixin alinks($textColor){
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
-  color: $primary-fontColor;
   transition: $semi-transition;
   font-family: $font-text;
+  color: $textColor;
 
 }
 
@@ -65,12 +65,20 @@ $semi-transition: all 1s;
 //  end logo and button
 
 // navLinks 
+.showNav{
+  height: 257px;
+  transform: scale(1);
+}
 
 .navlinks{
   list-style: none;
   background: $primary-white;
   // padding: 1rem;
   margin: .8rem 2rem;
+  transition: $main-transition;
+  height: 0;
+  transform: scale(0);
+  overflow: hidden;
 
   li{
     width: 100%; 
@@ -86,7 +94,7 @@ $semi-transition: all 1s;
       a{
       padding:.7rem;
       // includes anchor tag mixin
-         @include alinks;
+         @include alinks($primary-fontColor);
     }
    } 
    .nav-icons{
@@ -98,6 +106,92 @@ $semi-transition: all 1s;
    .btn-directions{
      display: none;
    }
+  //   Big screen
+     @media screen and (min-width:992px){
+       .nav-container{
+       display: flex;
+       justify-content: space-between;
+       color: $primary-white;
+       flex-direction: row;
+       }
+       .nav-button{
+         display: none;
+       }
+     
+       .nav-litle{
+         order: 1;
+       }
+       .navlinks{
+         display: flex;
+         background: transparent;
+         height: auto;
+         padding: 0;
+         order:0 ;
+         justify-content: center;
+         align-items: center;
+          
+         a{
+           color: $primary-white;
+           padding: 0;
+           margin-right: 1.5rem;
+         }
+        
+         li{
+          color: $primary-white;
+
+           &:hover{
+            background: transparent;
+            padding: 0;
+            a{
+              padding: 0;
+              color: $primary-yellow;
+              padding-bottom: 0.2rem;
+              border-bottom: 2px solid $primary-yellow;
+            }
+           }
+         }
+       }
+       .nav-icons{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         order: 3;
+         align-self: center;
+         list-style-type: none;
+         li{
+           padding-left: 1rem;
+           font-size: 1rem;
+           transition: $semi-transition;
+           &:hover{
+             color: $primary-yellow;
+
+           }
+         }
+       }
+       .number{
+         display: block;
+         order: 4;
+        //  width: 5rem;
+        //  height: 2rem;
+         border: 2px solid $primary-yellow;
+         align-self: center;
+         margin-right: 1rem;
+         margin-left: 2rem;
+         border-radius: 2rem;
+         color: $primary-yellow;
+         font-weight: bold;
+         font-size: 1.2rem;
+         padding: .6rem 2rem;
+         transition: $semi-transition;
+         &:hover{
+          background: $primary-yellow;
+          color: $primary-white;
+         }
+       }
+     
+      
+      
+     }
    
   
 

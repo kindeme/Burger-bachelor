@@ -17,13 +17,25 @@ $font-cursive: 'Courgette', cursive;
   margin: 0;
   box-sizing: border-box;
 }
+@mixin btn{
+  color: $primary-white;
+  background: $primary-fontColor;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 6rem;
+  width: 3rem;
+  &:hover{
+    background: $primary-white;
+    color: $primary-fontColor;
+  }
 
+}
 body{
   font-family: $font-text;
 }
 //  Header style
 header{
-  background: url('../images/headerbcg-1.jpg')center/cover fixed no-repeat;
+  background: url('../images/headerbcg-2.jpg')center/cover fixed no-repeat;
  width: 100%;
  height: 100vh;
 
@@ -35,7 +47,8 @@ header{
    text-align: center;
    font-weight: bold;
    padding: 1rem;
-   margin-bottom: 1rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
  }
  .header-title{
    font-size: 2rem;
@@ -47,6 +60,7 @@ header{
    margin-bottom: -4rem;
    margin-left:1rem;
    margin-right:1rem;
+   animation: animHeader 3s ease-in;
 
  }
  .maxican{
@@ -58,10 +72,36 @@ header{
    text-align: center;
    margin-left:1rem;
   margin-right:1rem;
+  animation: animMaxican 3s ease-in;
    .m{
      font-size: 7rem;
    }
  }
+ @keyframes animHeader{
+   0%{
+     transform: translateX(100%);
+   }
+  //  50%{
+  //   transform: translateX(-100%);
+  //  }
+   100%{
+    transform: translateX(0%);
+
+   }
+ }
+ @keyframes animMaxican{
+  0%{
+    transform: translateX(100%);
+  }
+  50%{
+   transform: translateX(-100%);
+  }
+  100%{
+   transform: translateX(0%);
+
+  }
+}
+
  @media screen and (min-width: 700px){
    .header-title{
     font-size: 5rem;
@@ -73,6 +113,34 @@ header{
       font-size: 13rem;
     }
  }
+ .deal{
+  margin-top: 3rem;
+   margin-bottom: 5rem;
+ }
 }
+@media screen and (min-width: 992px){
+.btn-directions{
+  display: block;
 }
+.btn-left{
+  @include btn;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+}
+.btn-right{
+  @include btn;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  }
 
+}
+}
+// End header style
