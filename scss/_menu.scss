@@ -20,6 +20,7 @@ $font-cursive: 'Courgette', cursive;
     max-width: 1170px;
     margin: 0 auto;
     padding: 2rem;
+    // @include title;
   
   .show-menu{
     font-family: $font-cursive;
@@ -37,8 +38,8 @@ $font-cursive: 'Courgette', cursive;
     font-size: 2rem;
     font-weight: bolder;
     padding: 1.5rem;
-
   }
+   }
   .all-menu{
     display: grid;
     grid-template-columns: 1fr;
@@ -97,6 +98,7 @@ $font-cursive: 'Courgette', cursive;
 @media screen and (min-width:800px){
   .menu-title{
     font-size: 3rem;
+    padding: 0;
   }
   .all-menu{
     display: grid;
@@ -110,10 +112,9 @@ $font-cursive: 'Courgette', cursive;
       padding-left: 2rem;
     }
     .single-title{
-      padding: 0;
+      margin-left: -1rem;
     }
    }
   }
   
 
-}

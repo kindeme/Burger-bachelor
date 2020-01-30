@@ -248,7 +248,7 @@
   padding: 1.5rem;
 }
 
-.menu-center .all-menu {
+.all-menu {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -258,42 +258,42 @@
   grid-gap: 2rem;
 }
 
-.menu-center .all-menu .single-menu {
+.all-menu .single-menu {
   text-align: center;
 }
 
-.menu-center .all-menu .single-menu .burgerImg {
+.all-menu .single-menu .burgerImg {
   width: 166px;
   height: 166px;
   border-radius: 100%;
   display: block;
 }
 
-.menu-center .all-menu .single-menu .single-title {
+.all-menu .single-menu .single-title {
   text-transform: capitalize;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.menu-center .all-menu .single-menu .img-box {
+.all-menu .single-menu .img-box {
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-.menu-center .all-menu .single-menu .menu-text {
+.all-menu .single-menu .menu-text {
   font-size: 1.2rem;
   padding-bottom: 1rem;
   font-weight: lighter;
 }
 
-.menu-center .all-menu .single-menu .menu-price {
+.all-menu .single-menu .menu-price {
   color: #f0542c;
   font-size: 1.5rem;
   font-weight: bolder;
 }
 
-.menu-center .menu-btn {
+.menu-btn {
   display: block;
   text-decoration: none;
   color: #f0542c;
@@ -307,32 +307,33 @@
   transition: all 1s;
 }
 
-.menu-center .menu-btn:hover {
+.menu-btn:hover {
   background: #f0542c;
   color: #ffffff;
 }
 
 @media screen and (min-width: 800px) {
-  .menu-center .menu-title {
+  .menu-title {
     font-size: 3rem;
+    padding: 0;
   }
-  .menu-center .all-menu {
+  .all-menu {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .menu-center .all-menu .single-menu {
+  .all-menu .single-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-center .all-menu .menu-info {
+  .all-menu .menu-info {
     text-align: left;
     padding-left: 2rem;
   }
-  .menu-center .all-menu .single-title {
-    padding: 0;
+  .all-menu .single-title {
+    margin-left: -1rem;
   }
 }
 
@@ -351,9 +352,9 @@
 }
 
 .special-menu .single-special {
-  padding-top: 8rem;
+  padding-top: 12rem;
   padding-left: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   overflow: hidden;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -415,6 +416,59 @@
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about {
+  background: url("../images/menubcg.jpg") center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.about .about-center {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.about .chef {
+  display: block;
+  width: 100%;
+}
+
+.about .our-info {
+  padding: 1rem 2rem;
+}
+
+.about .show-menu {
+  font-family: "Courgette", cursive;
+  color: #f2c64d;
+  font-size: 2rem;
+}
+
+.about .show-menu .m {
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+
+.about .menu-title {
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1.5rem;
+}
+
+.about .menu-text {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 800px) {
+  .about .menu-title {
+    font-size: 3rem;
+    padding: 0;
   }
 }
 

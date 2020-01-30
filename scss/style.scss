@@ -2,6 +2,7 @@
 @import 'navbar';
 @import 'menu';
 @import 'special';
+@import 'about';
 
 $primary-color:#f0542c;
 $primary-yellow:#f2c64d;
@@ -31,6 +32,27 @@ $semi-transition: all 1s;
     background: $primary-white;
     color: $primary-fontColor;
   }
+
+  // @mixin ourTitle{
+  //   .show-menu{
+  //     font-family: $font-cursive;
+  //     color: $primary-yellow;
+  //     font-size: 2rem;
+  //     .m{
+  //       font-size: 2.8rem;
+  //       font-weight: lighter;
+  //     }
+  //   }
+  //   .menu-title{
+  //     text-transform: uppercase;
+  //     font-family: $font-title;
+  //     color: $primary-fontColor;
+  //     font-size: 2rem;
+  //     font-weight: bolder;
+  //     padding: 1.5rem;
+  
+  //   }
+  // }
 
 }
 body{
