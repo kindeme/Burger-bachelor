@@ -77,27 +77,30 @@ header{
      font-size: 7rem;
    }
  }
-//  @keyframes animHeader{
-//    0%{
-//      transform: translateX(1000px);
-//    }
-//    100%{
-//     transform: translateX(0px);
+ @keyframes animHeader{
+   0%{
+     transform: translateX(100px);
+   }
+   50%{
+       transform: translateX(-1100px);
+      }
+   100%{
+    transform: translateX(0px);
 
-//    }
-//  }
-//  @keyframes animMaxican{
-//   0%{
-//     transform: translateX(1000px);
-//   }
-//   50%{
-//    transform: translateX(-1100px);
-//   }
-//   100%{
-//    transform: translateX(0px);
+   }
+ }
+ @keyframes animMaxican{
+  0%{
+    transform: translateX(-100px);
+  }
+  50%{
+   transform: translateX(1100px);
+  }
+  100%{
+   transform: translateX(0px);
 
-//   }
-// }
+  }
+}
 
  @media screen and (min-width: 700px){
    .header-title{

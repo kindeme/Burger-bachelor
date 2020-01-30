@@ -49,7 +49,8 @@ $semi-transition: all 1s;
     height: 4px;
     background: $primary-white;
     border-radius: 2px;
-    margin: 10px;
+    margin: 7px;
+    transition: $semi-transition;
  
 }
 .change.bar1{

@@ -33,7 +33,7 @@ $font-cursive: 'Courgette', cursive;
     text-transform: uppercase;
     font-family: $font-title;
     color: $primary-fontColor;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
     padding: 1.5rem;
 
@@ -42,10 +42,11 @@ $font-cursive: 'Courgette', cursive;
     display: grid;
     grid-template-columns: 1fr;
     padding:2rem;
+    padding-bottom: 3rem;
     grid-gap: 2rem;
 
     .single-menu{
-      display: flex;
+     text-align: center;
 
       .burgerImg{
         width: 166px;
@@ -53,22 +54,65 @@ $font-cursive: 'Courgette', cursive;
         border-radius: 100%;
         display: block;
       }
-      .menu-info{
-        text-align: left;
-        padding-left: 2rem;
-        display: block;
-      }
       .single-title{
         text-transform: capitalize;
-        font-size: 1.2rem;
+        font-size: 2rem;
+        padding: 1rem;
         
+      }
+      .img-box{
+       display: grid;
+       place-items: center;
+      }
+      .menu-text{
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        font-weight: lighter;
+      }
+      .menu-price{
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: bolder;
+
       }
     }
   }
-  @media screen and (min-width:750px){
-    .all-menu{
-      grid-template-columns: repeat(2,1fr);
+  .menu-btn{
+    display: block;
+    text-decoration: none;
+   color: $primary-color;
+   border: 1px solid $primary-color;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    transition: $semi-transition;
+    &:hover{
+     background: $primary-color;
+     color: $primary-white;
     }
+}
+@media screen and (min-width:800px){
+  .menu-title{
+    font-size: 3rem;
   }
+  .all-menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+    .single-menu{
+      display: flex;
+    }
+    .menu-info{
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .single-title{
+      padding: 0;
+    }
+   }
   }
+  
 
+}
