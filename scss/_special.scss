@@ -12,21 +12,21 @@ $main-transition: all 2s ease;
 $semi-transition: all 1s;
 
 .special-menu{
-  padding: 2rem 0;
+  overflow: hidden;
   .special1{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../images/special-1.jpg')center/cover no-repeat;
    
   }
   .special2{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('../images/special-2.jpg')center/cover no-repeat;
-    width: 100%;
   }
   .single-special{
     padding-top: 8rem;
     padding-left:5rem;
     padding-bottom: 3rem;
-    overflow: hidden;
+   overflow: hidden;
     transition: $main-transition;
+    height: auto;
     &:hover{
       transform: scale(1.1);
       a{
@@ -68,10 +68,14 @@ $semi-transition: all 1s;
     background: $primary-yellow;
     width: 150px;  
 }
-// @media screen and (min-width:800px){
-  .special-menu{
-    display: flex;
+@media screen and (min-width:800px){
+  .global-special{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
   }
-
-// }
+  
+ 
+}
 }
