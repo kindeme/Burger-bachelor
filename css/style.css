@@ -218,6 +218,7 @@
 .menu {
   background: url("../images/menubcg.jpg") center/cover no-repeat;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 .menu-center {
@@ -333,6 +334,84 @@
   .menu-center .all-menu .single-title {
     padding: 0;
   }
+}
+
+.special-menu {
+  padding: 2rem 0;
+}
+
+.special-menu .special1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/special-1.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/special-1.jpg") center/cover no-repeat;
+}
+
+.special-menu .special2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../images/special-2.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/special-2.jpg") center/cover no-repeat;
+  width: 100%;
+}
+
+.special-menu .single-special {
+  padding-top: 8rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.special-menu .single-special:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.special-menu .single-special:hover a {
+  background: transparent;
+  color: #ffffff;
+}
+
+.special-menu .president-price {
+  color: #f0542c;
+  font-size: 1.5rem;
+}
+
+.special-menu .special2 {
+  margin-top: 2rem;
+}
+
+.special-menu .special-title {
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-bottom: .7rem;
+  padding-top: .7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.special-menu .special-text {
+  color: #ffffff;
+  padding-bottom: 1.5rem;
+}
+
+.special-menu .order {
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #f2c64d;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: #f2c64d;
+  width: 150px;
+}
+
+.special-menu .special-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 *, ::after, ::before {

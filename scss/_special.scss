@@ -1,0 +1,77 @@
+
+$primary-color:#f0542c;
+$primary-yellow:#f2c64d;
+$primary-white:#ffffff;
+$primary-black:#000000;
+$primary-fontColor:#333333;
+
+$font-text: 'Roboto', sans-serif;
+$font-title:'Libre Baskerville', serif;
+$font-cursive: 'Courgette', cursive;
+$main-transition: all 2s ease;
+$semi-transition: all 1s;
+
+.special-menu{
+  padding: 2rem 0;
+  .special1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../images/special-1.jpg')center/cover no-repeat;
+   
+  }
+  .special2{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('../images/special-2.jpg')center/cover no-repeat;
+    width: 100%;
+  }
+  .single-special{
+    padding-top: 8rem;
+    padding-left:5rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    transition: $main-transition;
+    &:hover{
+      transform: scale(1.1);
+      a{
+        background:transparent;
+        color: $primary-white;
+      }
+
+    }
+  }
+  .president-price{
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+  .special2{
+    margin-top: 2rem;
+  }
+  .special-title{
+    text-transform: capitalize;
+    color: $primary-white;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+    font-family: $font-text;
+  }
+  .special-text{
+    color: $primary-white;
+    padding-bottom: 1.5rem;
+  }
+  .order{
+    text-transform: capitalize;
+    text-align: center;
+   display: block;
+    text-decoration: none;
+   color: $primary-white;
+   border: 1px solid $primary-yellow;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    transition: $semi-transition;
+    background: $primary-yellow;
+    width: 150px;  
+}
+// @media screen and (min-width:800px){
+  .special-menu{
+    display: flex;
+  }
+
+// }
+}
