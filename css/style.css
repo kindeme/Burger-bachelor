@@ -285,6 +285,7 @@
   font-size: 1.2rem;
   padding-bottom: 1rem;
   font-weight: lighter;
+  line-height: 2rem;
 }
 
 .all-menu .single-menu .menu-price {
@@ -342,13 +343,13 @@
 }
 
 .special-menu .special1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/special-1.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/special-1.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../images/special-1.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/special-1.jpg") center/cover no-repeat;
 }
 
 .special-menu .special2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../images/special-2.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/special-2.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/special-2.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/special-2.jpg") center/cover no-repeat;
 }
 
 .special-menu .single-special {
@@ -490,7 +491,76 @@
 }
 
 .video-section {
-  background: url("../images/headerbcg-3.jpg") center/cover fixed no-repeat;
+  background: url("../images/headerbcg-1.jpg") center/cover no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.video-section .header-title {
+  font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.video-section .description {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.video-section .video-content {
+  display: none;
+}
+
+.video-section .play-btn {
+  margin-top: .5rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f0542c;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .video-section .header-title {
+    font-size: 5rem;
+  }
+}
+
+.testimonial {
+  padding-top: 4rem;
+}
+
+.testimonial .cuctomer-card {
+  padding: 2rem;
+}
+
+.testimonial .customer-text {
+  padding-top: 1rem;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: lighter;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .testimonial .menu-title {
+    font-size: 2.5rem;
+  }
 }
 
 *, ::after, ::before {
