@@ -837,6 +837,10 @@
   text-transform: capitalize;
 }
 
+.gallery {
+  padding: 4rem 0;
+}
+
 .gallery-center {
   text-align: center;
 }
@@ -863,6 +867,7 @@
 }
 
 .gallery-center .gallery-container {
+  padding-top: 3rem;
   display: -ms-grid;
   display: grid;
   grid-gap: .6rem;
