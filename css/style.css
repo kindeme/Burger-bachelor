@@ -626,7 +626,7 @@
 }
 
 .instagram {
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -678,7 +678,7 @@
   text-align: center;
   border: 1px dashed #ffffff;
   padding-top: 80px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   -webkit-transition: all 1s;
   transition: all 1s;
   opacity: 0;
