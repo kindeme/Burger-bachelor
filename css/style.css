@@ -831,6 +831,10 @@
 .footer .copyright {
   padding-top: 2rem;
   border-top: 1px solid #c4c0c0;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  text-transform: capitalize;
 }
 
 *, ::after, ::before {
@@ -1013,4 +1017,20 @@ header .maxican .m {
     background: #ffffff;
     color: #333333;
   }
+}
+
+.menu-header {
+  background: url("../images/special-2.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.menu-header .menu-title {
+  -webkit-animation: none;
+          animation: none;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5rem;
 }

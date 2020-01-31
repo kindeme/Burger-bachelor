@@ -25,6 +25,22 @@ $semi-transition: all 1s;
   margin: 0;
   box-sizing: border-box;
 }
+@mixin contextHeader($imageLocation){
+  background: $imageLocation;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  
+  .menu-title{
+    animation: none;
+    font-family: $font-text;
+    padding-top: 5rem;
+    
+  }
+
+}
 @mixin btn{
   color: $primary-white;
   background: $primary-fontColor;
@@ -37,28 +53,9 @@ $semi-transition: all 1s;
     color: $primary-fontColor;
   }
 
-  // @mixin ourTitle{
-  //   .show-menu{
-  //     font-family: $font-cursive;
-  //     color: $primary-yellow;
-  //     font-size: 2rem;
-  //     .m{
-  //       font-size: 2.8rem;
-  //       font-weight: lighter;
-  //     }
-  //   }
-  //   .menu-title{
-  //     text-transform: uppercase;
-  //     font-family: $font-title;
-  //     color: $primary-fontColor;
-  //     font-size: 2rem;
-  //     font-weight: bolder;
-  //     padding: 1.5rem;
-  
-  //   }
-  // }
-
+ 
 }
+
 body{
   font-family: $font-text;
 }
@@ -174,3 +171,8 @@ header{
 }
 // End header style
 
+//  Menu page Header style
+
+.menu-header{
+  @include contextHeader(url('../images/special-2.jpg'));
+}
