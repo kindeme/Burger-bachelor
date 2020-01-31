@@ -12,23 +12,59 @@ $semi-transition: all 1s;
 
 .testimonial{
   padding-top: 4rem;
+  padding-bottom: 1rem;
+  position: relative;
 .cuctomer-card{
-  padding:2rem;
+  text-align: center;
 }
 .customer-text{
   padding-top: 1rem;
   font-size: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   font-weight: lighter;
   line-height: 2rem;
 }
-
-
+.img-card{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.menu-center{
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.customer-name{
+  padding-top: 1rem;
+  letter-spacing: .1rem;
+  padding-bottom: .5rem;
+}
+.review-icon{
+  color: $primary-yellow;
+  font-size: .7rem;
+}
+.btnt{
+  display: none;
+}
 
 
   @media screen and (min-width:800px){
     .menu-title{
       font-size: 2.5rem;
+      }
+      .btnt{
+        display: block;
+      }
+      .prevBtnt{
+        top:50%;
+        left: 0;
+        position: absolute;
+        padding: 1rem;
+        border: 1px solid $primary-fontColor;
+        transform: translate(-50%,50%);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
       }
     }
 }
