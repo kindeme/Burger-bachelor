@@ -956,6 +956,18 @@
   grid-area: gallery6;
 }
 
+@media screen and (max-width: 900px) {
+  .gallery-center .gallery-container {
+        grid-template-areas: 'gallery1 gallery1 gallery2 gallery2' 'gallery3 gallery3 gallery4 gallery4' 'gallery5 gallery5 gallery6 gallery6';
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-center .gallery-container {
+        grid-template-areas: 'gallery1 gallery1 gallery1 gallery1' 'gallery2 gallery2 gallery2 gallery2' 'gallery3 gallery3 gallery3 gallery3' 'gallery5 gallery5 gallery5 gallery5' 'gallery4 gallery4 gallery4 gallery4' 'gallery6 gallery6 gallery6 gallery6';
+  }
+}
+
 *, ::after, ::before {
   padding: 0;
   margin: 0;

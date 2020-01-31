@@ -92,6 +92,26 @@ $semi-transition: all 1s;
     grid-area: gallery6;
   }
   
+  @media screen and (max-width:900px){
+    .gallery-container{
+      grid-template-areas: 'gallery1 gallery1 gallery2 gallery2'
+                          'gallery3 gallery3 gallery4 gallery4'
+                          'gallery5 gallery5 gallery6 gallery6';
+  }
+
+  }
+  @media screen and (max-width:500px){
+    .gallery-container{
+      grid-template-areas: 'gallery1 gallery1 gallery1 gallery1'
+                          'gallery2 gallery2 gallery2 gallery2'
+                          'gallery3 gallery3 gallery3 gallery3'
+                          'gallery5 gallery5 gallery5 gallery5'
+                          'gallery4 gallery4 gallery4 gallery4'
+                          'gallery6 gallery6 gallery6 gallery6';
+
+  }
+
+  }
 
 }
 
