@@ -676,7 +676,7 @@
   border-radius: 50%;
   z-index: 2;
   text-align: center;
-  border: 1px dotted #ffffff;
+  border: 1px dashed #ffffff;
   padding-top: 80px;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 1s;
