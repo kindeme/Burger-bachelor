@@ -544,14 +544,31 @@
 .testimonial {
   padding-top: 4rem;
   padding-bottom: 1rem;
-  position: relative;
 }
 
-.testimonial .cuctomer-card {
+.testimonial .testi-center {
   text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.testimonial .customer-text {
+.testimonial .testi-center .show-menu {
+  font-family: "Courgette", cursive;
+  color: #f2c64d;
+  font-size: 2rem;
+}
+
+.testimonial .testi-center .menu-title {
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  color: #333333;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  padding: 1.5rem;
+}
+
+.testimonial .testi-center .customer-text {
   padding-top: 1rem;
   font-size: 1rem;
   padding-bottom: 3rem;
@@ -559,33 +576,36 @@
   line-height: 2rem;
 }
 
-.testimonial .img-card {
+.testimonial .testi-center .img-card {
   border-radius: 50%;
   width: 70px;
   height: 70px;
 }
 
-.testimonial .menu-center {
+.testimonial .testi-center .menu-center {
   margin: 0 auto;
   max-width: 1170px;
 }
 
-.testimonial .customer-name {
+.testimonial .testi-center .customer-name {
   padding-top: 1rem;
   letter-spacing: .1rem;
   padding-bottom: .5rem;
 }
 
-.testimonial .review-icon {
+.testimonial .testi-center .review-icon {
   color: #f2c64d;
   font-size: .7rem;
 }
 
-.testimonial .btnt {
+.testimonial .testi-center .btnt {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
+  .testimonial .textimonial {
+    position: relative;
+  }
   .testimonial .menu-title {
     font-size: 2.5rem;
   }

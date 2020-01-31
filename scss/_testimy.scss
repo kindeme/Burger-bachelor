@@ -10,13 +10,29 @@ $font-cursive: 'Courgette', cursive;
 $main-transition: all 2s ease;
 $semi-transition: all 1s;
 
+
 .testimonial{
   padding-top: 4rem;
   padding-bottom: 1rem;
-  position: relative;
-.cuctomer-card{
-  text-align: center;
-}
+  .testi-center{
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+  .show-menu{
+    font-family: $font-cursive;
+    color: $primary-yellow;
+    font-size: 2rem;
+  }
+  .menu-title{
+    text-transform: uppercase;
+    font-family: $font-title;
+    color: $primary-fontColor;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    padding: 1.5rem;
+  }
 .customer-text{
   padding-top: 1rem;
   font-size: 1rem;
@@ -45,15 +61,18 @@ $semi-transition: all 1s;
 .btnt{
   display: none;
 }
-
-
+}
   @media screen and (min-width:800px){
+    .textimonial{
+      position: relative;
+    }
     .menu-title{
       font-size: 2.5rem;
       }
       .btnt{
         display: block;
       }
+      
       .prevBtnt{
         top:50%;
         left: 0;
