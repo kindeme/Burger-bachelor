@@ -8,6 +8,7 @@ $primary-fontColor:#333333;
 background: url('../images/menubcg.jpg') center/cover no-repeat;
 padding: 3rem 1rem 1rem 1rem;
 text-align:center;
+margin-top: 3rem;
 .footer-center{
   max-width: 1170px;
   margin: 0 auto;
@@ -65,5 +66,41 @@ input[type=email]{
    border-radius: 2rem;
    
  }
+}
+.footer-icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  .footer-icon{
+    display: block;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    color: $primary-color;
+    border: 1px dashed $primary-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: center;
+    position: relative;
+    transition: $semi-transition;
+    &:hover{
+      background: $primary-color;
+      color: $primary-white;
+    }
+    i{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      position: absolute;
+    }
+  
+  }
+}
+.copyright{
+  padding-top: 2rem;
+  border-top: 1px solid rgb(196, 192, 192);
 }
 }

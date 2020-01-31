@@ -700,6 +700,7 @@
   background: url("../images/menubcg.jpg") center/cover no-repeat;
   padding: 3rem 1rem 1rem 1rem;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .footer .footer-center {
@@ -779,6 +780,57 @@
   padding: .7rem 1.4rem;
   margin: .5rem .7rem;
   border-radius: 2rem;
+}
+
+.footer .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.footer .footer-icons .footer-icon {
+  display: block;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: #f0542c;
+  border: 1px dashed #f0542c;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.footer .footer-icons .footer-icon:hover {
+  background: #f0542c;
+  color: #ffffff;
+}
+
+.footer .footer-icons .footer-icon i {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.footer .copyright {
+  padding-top: 2rem;
+  border-top: 1px solid #c4c0c0;
 }
 
 *, ::after, ::before {
