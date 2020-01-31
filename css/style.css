@@ -696,6 +696,91 @@
   overflow: hidden;
 }
 
+.footer {
+  background: url("../images/menubcg.jpg") center/cover no-repeat;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.footer .footer-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.footer .address-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer .address-title {
+  padding: 1rem 0.5rem;
+  font-size: 1.8rem;
+}
+
+.footer .address-text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  padding: .6rem;
+}
+
+.footer .phone-number {
+  padding: 1rem 0.2rem;
+  color: #f0542c;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+}
+
+.footer form {
+  display: block;
+  position: relative;
+}
+
+.footer form input[type=email] {
+  width: 100%;
+  border: 1px solid #c4c0c0;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  background: #f5fbff;
+}
+
+.footer form input[type=email]::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.footer form input[type=email]:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.footer form input[type=email]::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.footer form input[type=email]::placeholder {
+  font-size: 1rem;
+}
+
+.footer form button {
+  position: absolute;
+  border: none;
+  background: #f0542c;
+  color: #ffffff;
+  font-size: 1rem;
+  right: 0;
+  padding: .7rem 1.4rem;
+  margin: .5rem .7rem;
+  border-radius: 2rem;
+}
+
 *, ::after, ::before {
   padding: 0;
   margin: 0;
