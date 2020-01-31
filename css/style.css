@@ -1034,3 +1034,19 @@ header .maxican .m {
   font-family: "Roboto", sans-serif;
   padding-top: 5rem;
 }
+
+.about-header {
+  background: url("../images/headerbcg-1.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.about-header .menu-title {
+  -webkit-animation: none;
+          animation: none;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5rem;
+}

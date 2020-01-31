@@ -176,3 +176,6 @@ header{
 .menu-header{
   @include contextHeader(url('../images/special-2.jpg'));
 }
+.about-header{
+  @include contextHeader(url('../images/headerbcg-1.jpg'));
+}
