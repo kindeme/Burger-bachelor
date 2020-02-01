@@ -544,7 +544,7 @@
 .testimonial {
   padding-top: 4rem;
   padding-bottom: 1rem;
-  position: relative;
+  text-align: center;
 }
 
 .testimonial .testi-center {
@@ -605,23 +605,57 @@
 }
 
 @media screen and (min-width: 800px) {
-  .testimonial .menu-title {
+  .testimonial .testi-center .menu-title {
     font-size: 2.5rem;
   }
-  .testimonial .btnt {
+  .testimonial .testi-center .btnt {
     display: block;
   }
-  .testimonial .prevBtnt {
+  .testimonial .testi-center .prevBtnt {
     top: 50%;
     left: 0;
     position: absolute;
     padding: 1rem;
-    border: 1px solid #333333;
+    border: 1px solid #706c6c;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    color: #706c6c;
+  }
+  .testimonial .testi-center .prevBtnt .fas {
+    -webkit-transform: translate(-40%, -40%);
+            transform: translate(-40%, -40%);
+  }
+  .testimonial .testi-center .prevBtnt:hover {
+    background: #706c6c;
+    color: #ffffff;
+  }
+  .testimonial .testi-center .nexBtnt {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    border: 1px solid #706c6c;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    color: #706c6c;
+  }
+  .testimonial .testi-center .nexBtnt .fas {
+    -webkit-transform: translate(-20%, -40%);
+            transform: translate(-20%, -40%);
+  }
+  .testimonial .testi-center .nexBtnt:hover {
+    background: #706c6c;
+    color: #ffffff;
   }
 }
 
@@ -801,6 +835,7 @@
 .footer .footer-icons .footer-icon {
   display: block;
   margin-left: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.3rem;
   color: #f0542c;
   border: 1px dashed #f0542c;
@@ -1207,6 +1242,7 @@ header .maxican .m {
   padding: 5rem 1rem;
   margin: 0 auto;
   max-width: 1170px;
+  text-align: center;
 }
 
 .contact-center {

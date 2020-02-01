@@ -14,7 +14,7 @@ $semi-transition: all 1s;
 .testimonial{
   padding-top: 4rem;
   padding-bottom: 1rem;
-  position: relative;
+  text-align: center;
   .testi-center{
     text-align: center;
     max-width: 1170px;
@@ -63,27 +63,59 @@ $semi-transition: all 1s;
 .btnt{
   display: none;
 }
-}
-  @media screen and (min-width:800px){
-    .menu-title{
-      font-size: 2.5rem;
-      }
-      .btnt{
-        display: block;
-      }
-      
-      .prevBtnt{
-        top:50%;
-        left: 0;
-        position: absolute;
-        padding: 1rem;
-        border: 1px solid $primary-fontColor;
-        transform: translate(-50%,50%);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
 
-      }
+@media screen and (min-width:800px){
+  .menu-title{
+    font-size: 2.5rem;
+    }
+    .btnt{
+      display: block;
+      
+    }
     
-  }
+    .prevBtnt{
+      top:50%;
+      left: 0;
+      position: absolute;
+      padding: 1rem;
+      border: 1px solid #706c6c;
+      transform: translate(-50%,50%);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      transition: $semi-transition;
+      color: #706c6c;
+      .fas{
+        transform: translate(-40%,-40%);
+      }
+      &:hover{
+        background: #706c6c;
+        color: $primary-white;
+      }
+
+    }
+    .nexBtnt{
+      top:50%;
+      right: 0;
+      position: absolute;
+      padding: 1rem;
+      border: 1px solid #706c6c;
+      transform: translate(-50%,50%);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      transition: $semi-transition;
+      color: #706c6c;
+      .fas{
+        transform: translate(-20%,-40%);
+      }
+      &:hover{
+        background: #706c6c;
+        color: $primary-white;
+      }
+
+    }
+  
+}
+}
 }
