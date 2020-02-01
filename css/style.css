@@ -753,6 +753,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 2rem;
+  padding-right: 1rem;
 }
 
 .footer .address-title {
