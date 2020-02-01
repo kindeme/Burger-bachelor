@@ -1202,3 +1202,117 @@ header .maxican .m {
   font-family: "Roboto", sans-serif;
   padding-top: 5rem;
 }
+
+.map-container {
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.contact-center {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 2rem 1rem;
+}
+
+.contact-center .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-center .contact-form {
+  margin-bottom: 2rem;
+}
+
+.contact-center .contact-form .form-tilte {
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.contact-center .contact-form .input-form {
+  border-bottom: 2px solid #f0542c;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+.contact-center .contact-form .input-form input, .contact-center .contact-form .input-form textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.contact-center .contact-form .input-form input::-webkit-input-placeholder, .contact-center .contact-form .input-form textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-center .contact-form .input-form input:-ms-input-placeholder, .contact-center .contact-form .input-form textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-center .contact-form .input-form input::-ms-input-placeholder, .contact-center .contact-form .input-form textarea::-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-center .contact-form .input-form input::placeholder, .contact-center .contact-form .input-form textarea::placeholder {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-center .contact-form .input-submit {
+  margin-top: 2rem;
+}
+
+.contact-center .contact-form .input-submit input {
+  outline: none;
+  border: 2px solid #f0542c;
+  padding: .8rem 2rem;
+  background: none;
+  color: #f0542c;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-center .contact-form .input-submit input:hover {
+  background: #f0542c;
+  color: #ffffff;
+}
+
+.contact-center .all-contact1 {
+  margin-top: 2rem;
+}
+
+.contact-center .all-contact1 .mail-address {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-center .all-contact1 .mail-address .contact-item {
+  font-size: 1.8rem;
+  color: #333333;
+  padding-right: 2rem;
+}
+
+.contact-center .all-contact1 .mail-address .all-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.contact-center .all-contact1 .mail-address .all-info .second-text {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}

@@ -183,3 +183,94 @@ header{
 .contact-header{
   @include contextHeader(url('../images/headerbcg-3.jpg'));
 }
+
+// contact map
+.map-container{
+padding: 5rem 1rem;
+margin: 0 auto;
+max-width: 1170px;
+
+}
+
+//  form and conatct
+.contact-center{
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 2rem 1rem;
+  .contact-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-form{
+    // width: 25%;
+    margin-bottom: 2rem;
+    .form-tilte{
+      padding-bottom: 3rem;
+      font-size: 2rem;
+    }
+    .input-form{
+      border-bottom: 2px solid $primary-color;
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      padding-top: .5rem;
+
+      input,textarea{
+        background: none;
+        border: none;
+        outline: none;
+        &::placeholder{
+          font-size: 1rem;
+          font-family: $font-text;
+        }
+      }
+    }
+    .input-submit{
+      margin-top: 2rem;
+      
+      input{
+     
+     outline: none;
+     border: 2px solid $primary-color;
+      padding: .8rem 2rem;
+      background: none;
+      color: $primary-color;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      transition: $semi-transition;
+      &:hover{
+        background: $primary-color;
+         color: $primary-white;
+      }
+      }
+     
+    }
+  }
+  // all address section
+  .all-contact1{
+    margin-top: 2rem;
+ 
+  .mail-address{
+    padding-top: 2rem;
+    display: flex;
+    .contact-item{
+      font-size: 1.8rem;
+      color: $primary-fontColor;
+      padding-right: 2rem;
+      
+    }
+    .all-info{
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      line-height: 1.5rem;
+    
+      .second-text{
+        font-weight: lighter;
+        font-size: 1.1rem;
+      }
+
+    }
+  }
+}
+
+}
