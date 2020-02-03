@@ -20,6 +20,17 @@ $semi-transition: all 1s;
   color: $textColor;
 
 }
+//fixed
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:$primary-black ;
+  box-shadow: -2px 15px 11px -6px rgba(0,0,0,0.75);
+  transition: $semi-transition;
+  z-index: 2;
+ }
 
 //  logo and button
 .nav-litle{
@@ -106,6 +117,8 @@ $semi-transition: all 1s;
    .btn-directions{
      display: none;
    }
+  
+    
   //   Big screen
      @media screen and (min-width:992px){
        .nav-container{

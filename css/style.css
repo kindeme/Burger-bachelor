@@ -1,3 +1,16 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000000;
+  -webkit-box-shadow: -2px 15px 11px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: -2px 15px 11px -6px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  z-index: 2;
+}
+
 .nav-litle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,18 +1010,6 @@
   grid-area: gallery6;
 }
 
-@media screen and (max-width: 900px) {
-  .gallery-center .gallery-container {
-        grid-template-areas: 'gallery1 gallery1 gallery2 gallery2' 'gallery3 gallery3 gallery4 gallery4' 'gallery5 gallery5 gallery6 gallery6';
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .gallery-center .gallery-container {
-        grid-template-areas: 'gallery1 gallery1 gallery1 gallery1' 'gallery2 gallery2 gallery2 gallery2' 'gallery3 gallery3 gallery3 gallery3' 'gallery5 gallery5 gallery5 gallery5' 'gallery4 gallery4 gallery4 gallery4' 'gallery6 gallery6 gallery6 gallery6';
-  }
-}
-
 *, ::after, ::before {
   padding: 0;
   margin: 0;
@@ -1026,7 +1027,7 @@ header {
   height: 100vh;
 }
 
-header .deal {
+.deal {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
@@ -1038,7 +1039,7 @@ header .deal {
   margin-bottom: 2rem;
 }
 
-header .header-title {
+.header-title {
   font-size: 2rem;
   font-family: "Libre Baskerville", serif;
   color: #ffffff;
@@ -1052,7 +1053,7 @@ header .header-title {
           animation: animHeader 3s ease-in;
 }
 
-header .maxican {
+.maxican {
   font-family: "Courgette", cursive;
   color: #f2c64d;
   font-size: 4rem;
@@ -1064,7 +1065,7 @@ header .maxican {
           animation: animMaxican 3s ease-in;
 }
 
-header .maxican .m {
+.maxican .m {
   font-size: 7rem;
 }
 
@@ -1129,27 +1130,27 @@ header .maxican .m {
 }
 
 @media screen and (min-width: 700px) {
-  header .header-title {
+  .header-title {
     font-size: 5rem;
     margin-bottom: -7rem;
   }
-  header .maxican {
+  .maxican {
     font-size: 7rem;
   }
-  header .maxican .m {
+  .maxican .m {
     font-size: 13rem;
   }
-  header .deal {
+  .deal {
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  header .btn-directions {
+  .btn-directions {
     display: block;
   }
-  header .btn-left {
+  .btn-left {
     color: #ffffff;
     background: #333333;
     text-align: center;
@@ -1165,11 +1166,11 @@ header .maxican .m {
     display: grid;
     place-items: center;
   }
-  header .btn-left:hover {
+  .btn-left:hover {
     background: #ffffff;
     color: #333333;
   }
-  header .btn-right {
+  .btn-right {
     color: #ffffff;
     background: #333333;
     text-align: center;
@@ -1185,7 +1186,7 @@ header .maxican .m {
     display: grid;
     place-items: center;
   }
-  header .btn-right:hover {
+  .btn-right:hover {
     background: #ffffff;
     color: #333333;
   }
