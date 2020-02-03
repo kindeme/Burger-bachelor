@@ -25,15 +25,14 @@
 }
 
 .nav-litle .logo-box {
-  width: 5rem;
+  width: 6rem;
   border-radius: 5px;
   background: #f0542c;
   text-align: center;
 }
 
 .nav-litle .logo-box .logo {
-  width: 3.5rem;
-  width: 3rem;
+  width: 4rem;
 }
 
 .nav-litle .nav-button {
@@ -1008,6 +1007,22 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: gallery6;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-center .gallery-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 'gallery1 gallery1 gallery2 gallery2' 'gallery3 gallery3 gallery4 gallery4' 'gallery5 gallery5 gallery6 gallery6';
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-center .gallery-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 'gallery1 gallery1 gallery1 gallery1' 'gallery2 gallery2 gallery2 gallery2' 'gallery3 gallery3 gallery3 gallery3' 'gallery5 gallery5 gallery5 gallery5' 'gallery4 gallery4 gallery4 gallery4' 'gallery6 gallery6 gallery6 gallery6';
+  }
 }
 
 *, ::after, ::before {
