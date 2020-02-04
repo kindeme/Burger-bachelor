@@ -64,27 +64,27 @@ window.addEventListener('scroll',function(){
 let allTestimonial = [{
   text: ` " Honest conflict has more social value than dishonest harmony. "`,
   name: `Joe Rogan`,
-  image: `url('../images/customer-0.jpg')`
+  image: '../images/customer-0.jpg'
 },
 {
   text: ` " If you begin to understand what you are without trying to change it, then what you are undergoes a transformation.. "`,
 name: `Jiddu Krishnamurti`,
-image: `url('../images/customer-1.jpg')`
+image: '../images/customer-1.jpg'
 },
 {
 text: ` " happen. Make it happen. Make your own future. Make your own hope. Make your own love. And whatever your beliefs, honor your creator, not by passively waiting for grace to come down from upon high, but by doing what you can to make grace happen... yourself, right now, right down here on Earth.. "`,
 name: `Bradley Whitford`,
-image: `url('../images/customer-2.jpg')`
+image: '../images/customer-2.jpg'
 },
 {
   text: ` "The greatest discovery of all time is that a person can change his future by merely changing his attitude. "`,
   name: `Oprah Winfrey`,
-  image: `url('../images/customer-3.jpg')`
+  image: '../images/customer-3.jpg'
   },
   {
   text: ` "Decide what you want, decide what you are willing to exchange for it. Establish your priorities and go to work."`,
   name: `H. L. Hunt`,
-  image:`url('../images/customer-4.jpg')`
+  image:'../images/customer-4.jpg'
   }
 ];
 const customerText = document.querySelector('.customer-text');
@@ -114,7 +114,7 @@ nexBtn.addEventListener("click",function(){
   }
   customerText.textContent = allTestimonial[testiCount].text;
   customerName.textContent = allTestimonial[testiCount].name;
-  customerImage.scr = allTestimonial[testiCount].image;
+  customerImage.src = allTestimonial[testiCount].image;
 
 
 });
