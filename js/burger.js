@@ -21,13 +21,13 @@ window.addEventListener('scroll',function(){
  // // responsible navbar
  navBtn.addEventListener("click",function(){  
 
-      let value = navLinks.classList.contains('showNav');
+      let value = navLinks.classList.contains('shownav');
       if(value){
-        navLinks.classList.remove('showNav');
+        navLinks.classList.remove('shownav');
         navBtn.classList.remove('change');
       }
       else{
-        navLinks.classList.add('showNav');
+        navLinks.classList.add('shownav');
         navBtn.classList.add('change');
       }
     

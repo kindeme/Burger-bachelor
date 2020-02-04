@@ -65,22 +65,12 @@ $semi-transition: all 1s;
     transition: $semi-transition;
  
 }
-.change.bar1{
-  transform: translate(-10px,10px) rotate(45deg);
-}
-.change.bar2{
-  opacity: 0;
-}
-.change.bar3{
-  transform: translate(-8px,-7px) rotate(-45deg);
-}
+
 }
 //  end logo and button
 
 // navLinks 
-.showNav{
-  height: 257px;
-}
+
 
 .navlinks{
   list-style: none;
@@ -91,6 +81,7 @@ $semi-transition: all 1s;
   height: 0;
   overflow: hidden;
 
+  
   li{
     width: 100%; 
     transition: $semi-transition;
@@ -108,6 +99,19 @@ $semi-transition: all 1s;
          @include alinks($primary-fontColor);
     }
    } 
+
+   .shownav{
+    height: 257px;
+  }
+  .change .bar1{
+    transform: translate(-8px,10px) rotate(45deg);
+  }
+  .change .bar2{
+    opacity: 0;
+  }
+  .change .bar3{
+    transform: translate(-8px,-11px) rotate(-45deg);
+  }
    .nav-icons{
      display: none;
    }
