@@ -38,19 +38,17 @@ window.addEventListener('scroll',function(){
     const headerBcg = document.querySelector('#header');
     const btnLeft = document.querySelector('.btn-left');
     const btnRight = document.querySelector('.btn-right');
-    console.log(headerBcg);
 
     let counter = 0;
-        
 
           btnLeft.addEventListener("click", function(){
-            if (counter<0){
-              counter = bcg.length-1;
-            }
             counter--;
+            if (counter<1){
+              counter = bcg.length;
+            }
+            
             headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
-          
-      
+           
               });
 
               btnRight.addEventListener("click", function(){
@@ -60,10 +58,7 @@ window.addEventListener('scroll',function(){
                 counter++;
                 headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
                
-          
                   });
-
-            
 })();
 
 
