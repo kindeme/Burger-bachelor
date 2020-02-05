@@ -121,66 +121,66 @@ $semi-transition: all 1s;
 
 }
 
-// /* ligthbox */
+/* ligthbox */
 
-// .lightbox-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 999;
-//   background: rgba(0, 0, 0, 0.6) !important;
-//   padding-top: 10rem;
-//   // margin: 0 3rem;
-//   // display: none;
-// }
-// .show {
-//   display: block;
-// }
+.modal-session {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6) !important;
+  // display: none;
 
-// .lightbox-holder {
-//   position: relative;
-//     max-width: 1170px;
-//     margin: 0 auto;
-//     width:100%;
+  .modal-holder {
+    position: relative;
+     max-width: 1170px;
+     margin: 0 auto;
+     padding: 5rem;
+    
+     .modal-item {
+      min-height: 70vh;
+      background: url("../images/gallery-1.jpg") center/cover fixed no-repeat;
+      border-radius: 0.3rem;
+    }
+    .modal-close {
+      color: $primary-color;
+      font-size: 3rem;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+    }
+    .modal-close:hover {
+      color: $primary-white;
+    }
+    
+    .modal-control {
+      position: absolute;
+      font-size: 4rem;
+      color: $primary-color;
+      transition: all 1s linear;
+      cursor: pointer;
+    }
+    .modal-control:hover {
+      color: $primary-color;
+    }
+    .btnLeft {
+      top: 50%;
+      left: 0;
+      transform: translateX(-200%);
+    }
+    .btnRight {
+      top: 50%;
+      right: 0;
+      transform: translateX(200%);
+    }
+ }
  
+}
 
-//   }
-// .lightbox-item {
-//   min-height: 70vh;
-//   background: url("../images/gallery-1.jpg") center/cover fixed no-repeat;
-//   border-radius: 0.3rem;
-// }
-// .lightbox-close {
-//   color: var(--mainPink);
-//   font-size: 3rem;
-//   transition: all 1s ease-in-out;
-//   cursor: pointer;
-// }
-// .lightbox-close:hover {
-//   color: var(--mainYellow);
-// }
 
-// .lightbox-control {
-//   position: absolute;
-//   font-size: 4rem;
-//   color: var(--mainPink);
-//   transition: all 1s linear;
-//   cursor: pointer;
-// }
-// .lightbox-control:hover {
-//   color: var(--mainYellow);
-// }
-// .btnLeft {
-//   top: 50%;
-//   left: 0;
-//   transform: translateX(-200%);
-// }
-// .btnRight {
-//   top: 50%;
-//   right: 0;
-//   transform: translateX(200%);
-// }
 
- 
+
+.showModal {
+  display: block;
+}
