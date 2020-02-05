@@ -89,7 +89,6 @@ image: '../images/customer-2.jpg'
 ];
 const customerText = document.querySelector('.customer-text');
 const customerImage = document.querySelector('#customer-img');
-console.log(customerImage);
 const customerName = document.querySelector('.customer-name');
 const prevBtn = document.querySelector('.prevBtnt');
 const nexBtn = document.querySelector('.nexBtnt');
