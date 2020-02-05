@@ -557,17 +557,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  display: none;
 }
 
 .video-section .modal-video .close-video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 1.4rem;
+  padding: .5rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -576,7 +573,7 @@
   }
 }
 
-.show {
+.video-section .show {
   display: block;
 }
 

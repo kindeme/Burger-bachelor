@@ -43,7 +43,7 @@ $font-cursive: 'Courgette', cursive;
     display: grid;
    place-items: center;
    font-size: 1.3rem;
-  //  margin-top: 4rem;
+
   }
   .modal-video{
     position: absolute;
@@ -54,20 +54,23 @@ $font-cursive: 'Courgette', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
+    padding: 2rem;
+    display: none;
+
     
     .close-video{
-      display: flex;
-      justify-content: flex-end;
-      font-size: 1.4rem;
+    padding: .5rem;
+      font-size: 1.5rem;
     }
   }
+
  @media screen and (min-width: 700px){
   .video-title{
    font-size: 4rem;
   }
   }
-}
-.show{
-  display: block;
+  .show{
+    display: block;
+  }
 }

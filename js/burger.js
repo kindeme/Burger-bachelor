@@ -118,6 +118,20 @@ nexBtn.addEventListener("click",function(){
 
 });
 
+// Video modal
+const playBtn = document.querySelector('.play-btn');
+const videoModal = document.querySelector('.modal-video');
+const closeVideo = document.querySelector('.close-video');
+console.log( closeVideo);
+
+playBtn.addEventListener("click",function(){
+  videoModal.classList.add('show');
+});
+
+closeVideo.addEventListener("click",function(){
+  videoModal.classList.remove('show');
+});
+
 })();
 
 
