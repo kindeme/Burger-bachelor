@@ -15,7 +15,8 @@ $font-cursive: 'Courgette', cursive;
   color: $primary-white;
   text-align: center;
   position: relative;
-  .header-title{
+  
+  .video-title{
     font-size: 2rem;
     font-family: $font-title;
     color: $primary-white;
@@ -29,9 +30,6 @@ $font-cursive: 'Courgette', cursive;
   .description{
     padding: 1rem;
     font-size: 2rem;
-  }
-  .video-content{
-    display: none;
   }
   .play-btn{
     margin-top: .5rem;
@@ -47,10 +45,29 @@ $font-cursive: 'Courgette', cursive;
    font-size: 1.3rem;
   //  margin-top: 4rem;
   }
-  
+  .modal-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    
+    .close-video{
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.4rem;
+    }
+  }
  @media screen and (min-width: 700px){
-  .header-title{
-   font-size: 5rem;
+  .video-title{
+   font-size: 4rem;
   }
   }
+}
+.show{
+  display: block;
 }
