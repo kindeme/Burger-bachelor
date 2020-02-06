@@ -136,25 +136,25 @@ nexBtn.addEventListener("click",function(){
      container.classList.remove('showModal');
  
    });
-   //loop throught
-    // loop back
-    modalLeftIcon.addEventListener("click", function() {
-     modalCounter--;
-     if (modalCounter < 0) {
-       modalCounter = allImage.length - 1;
-     }
-    //  console.log(modalCounter);
-     imageHolder.src = allImage[modalCounter];
-   });
+  //  //loop throught
+  //   // loop back
+  //   modalLeftIcon.addEventListener("click", function() {
+  //    modalCounter--;
+  //    if (modalCounter < 0) {
+  //      modalCounter = allImage.length - 1;
+  //    }
+  //   //  console.log(modalCounter);
+  //    imageHolder.src = allImage[modalCounter];
+  //  });
 
-   modalLeftIcon.addEventListener("click", function() {
-    modalCounter--;
-    if (modalCounter < 0) {
-      modalCounter = allImage.length - 1;
-    }
-   //  console.log(modalCounter);
-    imageHolder.src = allImage[modalCounter];
-  });
+  //  modalLeftIcon.addEventListener("click", function() {
+  //   modalCounter--;
+  //   if (modalCounter < 0) {
+  //     modalCounter = allImage.length - 1;
+  //   }
+  //  //  console.log(modalCounter);
+  //   imageHolder.src = allImage[modalCounter];
+  // });
 
    });
  
