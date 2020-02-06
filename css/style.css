@@ -1049,42 +1049,50 @@
 }
 
 /* ligthbox */
-.modal-session {
+.modal-container {
   position: fixed;
   top: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  display: none;
 }
 
-.modal-session .modal-holder {
+.modal-container .modal-holder {
   position: relative;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 3rem;
 }
 
-.modal-session .modal-holder .modal-item {
+.modal-container .modal-holder .modal-item {
   min-height: 70vh;
   background: url("../images/gallery-1.jpg") center/cover fixed no-repeat;
   border-radius: 0.3rem;
 }
 
-.modal-session .modal-holder .modal-close {
+.modal-container .modal-holder .modal-close {
   color: #f0542c;
   font-size: 3rem;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: .3rem;
 }
 
-.modal-session .modal-holder .modal-close:hover {
+.modal-container .modal-holder .modal-close:hover {
   color: #ffffff;
 }
 
-.modal-session .modal-holder .modal-control {
+.modal-container .modal-holder .modal-control {
   position: absolute;
   font-size: 4rem;
   color: #f0542c;
@@ -1093,22 +1101,18 @@
   cursor: pointer;
 }
 
-.modal-session .modal-holder .modal-control:hover {
-  color: #f0542c;
+.modal-container .modal-holder .modal-control:hover {
+  color: #ffffff;
 }
 
-.modal-session .modal-holder .btnLeft {
+.modal-container .modal-holder .mbtnLeft {
   top: 50%;
   left: 0;
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
 }
 
-.modal-session .modal-holder .btnRight {
+.modal-container .modal-holder .mbtnRight {
   top: 50%;
   right: 0;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
 }
 
 .showModal {

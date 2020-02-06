@@ -123,21 +123,21 @@ $semi-transition: all 1s;
 
 /* ligthbox */
 
-.modal-session {
+.modal-container {
   position: fixed;
   top: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.6) !important;
-  // display: none;
+  background: rgba(0, 0, 0, 0.7) !important;
+  display: none;
 
   .modal-holder {
     position: relative;
      max-width: 1170px;
      margin: 0 auto;
-     padding: 5rem;
+     padding: 3rem;
     
      .modal-item {
       min-height: 70vh;
@@ -149,6 +149,9 @@ $semi-transition: all 1s;
       font-size: 3rem;
       transition: all 1s ease-in-out;
       cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: .3rem;
     }
     .modal-close:hover {
       color: $primary-white;
@@ -162,25 +165,23 @@ $semi-transition: all 1s;
       cursor: pointer;
     }
     .modal-control:hover {
-      color: $primary-color;
+      color: $primary-white;
     }
-    .btnLeft {
+    .mbtnLeft {
       top: 50%;
       left: 0;
-      transform: translateX(-200%);
+      // transform: translateX(-7%);
     }
-    .btnRight {
+    .mbtnRight {
       top: 50%;
       right: 0;
-      transform: translateX(200%);
+      // transform: translateX(7%);
     }
  }
  
+
 }
-
-
-
-
 .showModal {
   display: block;
 }
+
