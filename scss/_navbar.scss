@@ -80,8 +80,6 @@ $semi-transition: all 1s;
   transition: $main-transition;
   height: 0;
   overflow: hidden;
-
-  
   li{
     width: 100%; 
     transition: $semi-transition;
@@ -97,13 +95,15 @@ $semi-transition: all 1s;
       a{
       padding:.7rem;
       // includes anchor tag mixin
-         @include alinks($primary-white);
+         @include alinks($primary-fontColor);
          
     }
    } 
 
    .shownav{
-    height: 257px;
+    height: 205px;
+    border-radius: 5px;
+
   }
   .change .bar1{
     transform: translate(-8px,10px) rotate(45deg);
@@ -139,6 +139,11 @@ $semi-transition: all 1s;
      
        .nav-litle{
          order: 1;
+       }
+       .active{
+         color: $primary-yellow !important;
+        padding-bottom: 0.2rem;
+        border-bottom: 2px solid $primary-yellow;
        }
        .navlinks{
          display: flex;

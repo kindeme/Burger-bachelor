@@ -85,11 +85,12 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: #333333;
 }
 
 .shownav {
-  height: 257px;
+  height: 205px;
+  border-radius: 5px;
 }
 
 .change .bar1 {
@@ -139,6 +140,11 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .active {
+    color: #f2c64d !important;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #f2c64d;
   }
   .navlinks {
     display: -webkit-box;

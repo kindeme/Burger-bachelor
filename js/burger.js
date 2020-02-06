@@ -6,9 +6,9 @@
   const copydate = document.querySelector('#date');
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
-   const menuActive =document.querySelectorAll('.links')
+   const menuActive =document.querySelectorAll('.link')
 
-   // menu active
+  // menu active
    menuActive.forEach(function(menu){
      menu.addEventListener("click",function(e){
       menuActive.forEach(btn => btn.classList.rremove('active'));
