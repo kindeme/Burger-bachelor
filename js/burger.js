@@ -32,31 +32,31 @@ window.addEventListener('scroll',function(){
       }
     
     });
-    // // Header slider
+    // Header slider
 
-    // let bcg = ['headerbcg-1','headerbcg-2','headerbcg-3'];
-    // const headerBcg = document.querySelector('#header');
-    // const btnLeft = document.querySelector('.btn-left');
-    // const btnRight = document.querySelector('.btn-right');
+    let bcg = ['headerbcg-1','headerbcg-2','headerbcg-3'];
+    const headerBcg = document.querySelector('#header');
+    const btnLeft = document.querySelector('.btn-left');
+    const btnRight = document.querySelector('.btn-right');
 
-    // let counter = 0;
-    //       btnLeft.addEventListener("click", function(){
-    //         counter--;
-    //         if (counter<1){
-    //           counter = bcg.length;
-    //         }
-    //              headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
+    let counter = 0;
+          btnLeft.addEventListener("click", function(){
+            counter--;
+            if (counter<1){
+              counter = bcg.length;
+            }
+                 headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
            
-    //           });
+              });
 
-    //           btnRight.addEventListener("click", function(){
-    //             counter++;
-    //             if (counter>bcg.length){
-    //               counter = 1;
-    //             }
+              btnRight.addEventListener("click", function(){
+                counter++;
+                if (counter>bcg.length){
+                  counter = 1;
+                }
                
-    //             headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
-    //               });
+                headerBcg.style.backgroundImage = `url('../images/headerbcg-${counter}.jpg')`;
+                  });
 
 // testimonial js
 
@@ -118,19 +118,19 @@ nexBtn.addEventListener("click",function(){
 
 });
 
-// // Video modal
-// const playBtn = document.querySelector('.play-btn');
-// const videoModal = document.querySelector('.modal-video');
-// const closeVideo = document.querySelector('.close-video');
-// // console.log( closeVideo);
+// Video modal
+const playBtn = document.querySelector('.play-btn');
+const videoModal = document.querySelector('.modal-video');
+const closeVideo = document.querySelector('.close-video');
+// console.log( closeVideo);
 
-// playBtn.addEventListener("click",function(){
-//   videoModal.classList.add('show');
-// });
+playBtn.addEventListener("click",function(){
+  videoModal.classList.add('show');
+});
 
-// closeVideo.addEventListener("click",function(){
-//   videoModal.classList.remove('show');
-// });
+closeVideo.addEventListener("click",function(){
+  videoModal.classList.remove('show');
+});
 
 
 
