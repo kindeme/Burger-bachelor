@@ -148,60 +148,6 @@ closeVideo.addEventListener("click",function(){
 
 })();
 
-(function(){
- let allImage = [];
- let modalCounter = 0;
-
- const galleryBox = document.querySelectorAll('.gallery-box');
-  const images = document.querySelectorAll('.gallery-image');
-  const container = document.querySelector('.modal-container');
-  const closeIcon = document.querySelector('.modal-close');
-  const modalLeftIcon = document.querySelector('.mbtnLeft');
-  const modalRightIcon = document.querySelector('.mbtnRight');
-  const imageHolder = document.querySelector('.modal-item');
-
-  images.forEach(function(image){
-    allImage.push(image.src);
-   
-  });
-  
-  galleryBox.forEach(function(mainBox){
-
-    mainBox.addEventListener("click",function(e){
-      // show modal
-      container.classList.add('showModal');
-      // get source
-       let src = e.target.firstElementChild.src;
-       console.log(selectBox);
-
-       modalCounter = allImage.indexOf(src);
-       imageHolder.style.backgroundImage = `url( ${src})`;
-    });
-  });
-   //close modal
-  closeIcon.addEventListener("click",function(){
-    container.classList.remove('showModal');
-
-  })
-  //loop throught
-  //  // loop back
-  //  modalLeftIcon.addEventListener("click", function() {
-    // modalCounter--;
-  //   if (modalCounter < 0) {
-  //     modalcounter = imageList.length - 1;
-  //   }
-  //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
-  // });
-  // modalRightIcon.addEventListener("click", function() {
-  //   modalcounter++;
-  //   if (modalcounter > imageList.length - 1) {
-  //     modalcounter = 0;
-  //   }
-  //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
-  // });
- 
-
-  })();
 
 
 

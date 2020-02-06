@@ -101,5 +101,78 @@ nexBtn.addEventListener("click",function(){
 
 
 });
+
+// Gallery lightbox
+
+  let allImage = [];
+  let modalCounter = 0;
+ 
+  const galleryIcon = document.querySelectorAll('.gallery-icon');
+   const images = document.querySelectorAll('.gallery-image');
+   const container = document.querySelector('.modal-container');
+   const closeIcon = document.querySelector('.modal-close');
+   const modalLeftIcon = document.querySelector('.mbtnLeft');
+   const modalRightIcon = document.querySelector('.mbtnRight');
+   const imageHolder = document.querySelector('.modal-item');
+ 
+   images.forEach(function(image){
+     allImage.push(image.src);
+    
+   });
+   
+   galleryIcon.forEach(function(icon){
+// get source
+     icon.addEventListener("click",function(e){
+
+       // show modal
+       container.classList.add('showModal');
+       // get source
+
+      //  modalCounter = allImage.indexOf(src);
+     
+     
+ 
+        // modalCounter = allImage.indexOf(src);
+        // imageHolder.style.backgroundImage = `url( ${src})`;
+
+        // images.forEach(function(img) {
+        //   img.addEventListener("click", function(event) {
+        //     // show modal
+        //     container.classList.add("show");
+        //     // get source
+        //     let src = event.target.src;
+        //     // change counter
+        //     counter = imageList.indexOf(src);
+      
+        //     // show modal with image
+        //     item.style.backgroundImage = `url(${src})`;
+        //   });
+        // });
+     });
+
+   });
+    //close modal
+   closeIcon.addEventListener("click",function(){
+     container.classList.remove('showModal');
+ 
+   })
+   //loop throught
+   //  // loop back
+   //  modalLeftIcon.addEventListener("click", function() {
+     // modalCounter--;
+   //   if (modalCounter < 0) {
+   //     modalcounter = imageList.length - 1;
+   //   }
+   //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
+   // });
+   // modalRightIcon.addEventListener("click", function() {
+   //   modalcounter++;
+   //   if (modalcounter > imageList.length - 1) {
+   //     modalcounter = 0;
+   //   }
+   //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
+   // });
   
-})();
+ 
+   })();
+ 

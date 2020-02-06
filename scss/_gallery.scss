@@ -70,7 +70,7 @@ $semi-transition: all 1s;
         opacity: 0.4;
         transform: scale(1);
       }
-      i{
+      .gallery-icon{
         transform: scale(1.5);
         opacity: 1;
         transform: translate(-50%,-50%);
@@ -140,8 +140,10 @@ $semi-transition: all 1s;
      padding: 3rem;
     
      .modal-item {
+       display: block;
       min-height: 70vh;
-      background: url("../images/gallery-1.jpg") center/cover fixed no-repeat;
+      width: 100%;
+      // background: url("../images/gallery-1.jpg") center/cover fixed no-repeat;
       border-radius: 0.3rem;
     }
     .modal-close {
