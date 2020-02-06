@@ -85,6 +85,11 @@ $semi-transition: all 1s;
   li{
     width: 100%; 
     transition: $semi-transition;
+    .active{
+      color: $primary-yellow !important;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid $primary-yellow;
+    }
     &:hover{
       background: $primary-fontColor ;
         a{
@@ -92,11 +97,13 @@ $semi-transition: all 1s;
           color: $primary-color;
         }
       }
+     
     }
       a{
       padding:.7rem;
       // includes anchor tag mixin
-         @include alinks($primary-fontColor);
+         @include alinks($primary-white);
+         
     }
    } 
 
@@ -151,11 +158,18 @@ $semi-transition: all 1s;
            color: $primary-white;
            padding: 0;
            margin-right: 1.5rem;
+           &:active{
+            color: $primary-yellow !important;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid $primary-yellow;
+
+          }
+
          }
         
          li{
           color: $primary-white;
-
+          
            &:hover{
             background: transparent;
             padding: 0;

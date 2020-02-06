@@ -88,6 +88,12 @@
   color: #333333;
 }
 
+.active {
+  color: #f2c64d;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #f2c64d;
+}
+
 .shownav {
   height: 257px;
 }
