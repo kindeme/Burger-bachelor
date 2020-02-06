@@ -85,13 +85,7 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   font-family: "Roboto", sans-serif;
-  color: #333333;
-}
-
-.active {
-  color: #f2c64d;
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid #f2c64d;
+  color: #ffffff;
 }
 
 .shownav {
@@ -171,11 +165,11 @@
   .navlinks li {
     color: #ffffff;
   }
-  .navlinks li:hover {
+  .navlinks li:active, .navlinks li:hover {
     background: transparent;
     padding: 0;
   }
-  .navlinks li:hover a {
+  .navlinks li:active a, .navlinks li:hover a {
     padding: 0;
     color: #f2c64d;
     padding-bottom: 0.2rem;
