@@ -159,19 +159,34 @@ nexBtn.addEventListener("click",function(){
       // show modal
       container.classList.add('showModal');
       // get source
-       let selectBox = e.target;
+       let src = e.target.firstElementChild.src;
        console.log(selectBox);
 
-      //  counter = allImage.indexOf(src);
-      //  imageHolder.style.backgroundImage = `url(${src})`;
+       modalCounter = allImage.indexOf(src);
+       imageHolder.style.backgroundImage = `url( ${src})`;
     });
   });
-   
+   //close modal
   closeIcon.addEventListener("click",function(){
     container.classList.remove('showModal');
 
   })
-  
+  //loop throught
+  //  // loop back
+  //  modalLeftIcon.addEventListener("click", function() {
+    // modalCounter--;
+  //   if (modalCounter < 0) {
+  //     modalcounter = imageList.length - 1;
+  //   }
+  //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
+  // });
+  // modalRightIcon.addEventListener("click", function() {
+  //   modalcounter++;
+  //   if (modalcounter > imageList.length - 1) {
+  //     modalcounter = 0;
+  //   }
+  //   imageHolder.style.backgroundImage = `url(${imageList[counter]})`;
+  // });
  
 
   })();
