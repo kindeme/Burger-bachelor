@@ -126,7 +126,7 @@ nexBtn.addEventListener("click",function(){
        // show modal
        container.classList.add('showModal');
        // get source
-       let element = e.target.parentElement.children[0].src;
+       let element = e.target.previousElementSibling.src;
        modalCounter = allImage.indexOf(element);
        imageHolder.src = allImage[modalCounter];
 
