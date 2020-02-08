@@ -77,6 +77,7 @@ const customerName = document.querySelector('.customer-name');
 const prevBtn = document.querySelector('.prevBtnt');
 const nexBtn = document.querySelector('.nexBtnt');
 
+
 let testiCount = 0;
 prevBtn.addEventListener("click",function(){
   testiCount --;
@@ -102,8 +103,10 @@ nexBtn.addEventListener("click",function(){
 
 });
 
-// Gallery lightbox
+})();
 
+// Gallery lightbox
+(function(){
   let modalCounter = 0;
   let allImage = [];
 
@@ -143,20 +146,19 @@ nexBtn.addEventListener("click",function(){
      if (modalCounter < 0) {
        modalCounter = allImage.length - 1;
      }
-    //  console.log(modalCounter);
+     console.log(modalCounter);
      imageHolder.src = allImage[modalCounter];
    });
 
-   modalLeftIcon.addEventListener("click", function() {
-    modalCounter--;
-    if (modalCounter < 0) {
-      modalCounter = allImage.length - 1;
-      console.log(allImage);
+   modalRightIcon.addEventListener("click", function() {
+    modalCounter++;
+    if (modalCounter > allImage.length - 1) {
+      modalCounter = 0;
     }
-   //  console.log(modalCounter);
-    imageHolder.src = allImage[modalCounter];
+    console.log(modalCounter);
+    console.log(allImage[modalCounter]);
   });
 
    });
- 
-   })();
+  })();
+  
