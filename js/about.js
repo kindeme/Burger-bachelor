@@ -146,8 +146,8 @@ nexBtn.addEventListener("click",function(){
      if (modalCounter < 0) {
        modalCounter = allImage.length - 1;
      }
-     console.log(modalCounter);
-     imageHolder.src = allImage[modalCounter];
+    //  console.log(modalCounter);
+     imageHolder.src = `${allImage[modalCounter]}`;
    });
 
    modalRightIcon.addEventListener("click", function() {
@@ -155,8 +155,8 @@ nexBtn.addEventListener("click",function(){
     if (modalCounter > allImage.length - 1) {
       modalCounter = 0;
     }
-    console.log(modalCounter);
-    console.log(allImage[modalCounter]);
+    // console.log(modalCounter);
+    imageHolder.src = `${allImage[modalCounter]}`;
   });
 
    });
