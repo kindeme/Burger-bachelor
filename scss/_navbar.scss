@@ -140,11 +140,7 @@ $semi-transition: all 1s;
        .nav-litle{
          order: 1;
        }
-       .active{
-         color: $primary-yellow !important;
-        padding-bottom: 0.2rem;
-        border-bottom: 2px solid $primary-yellow;
-       }
+      
        .navlinks{
          display: flex;
          background: transparent;
@@ -212,6 +208,11 @@ $semi-transition: all 1s;
           color: $primary-white;
          }
        }
+       .active{
+        color: $primary-yellow !important;
+       padding-bottom: 0.2rem;
+       border-bottom: 2px solid $primary-yellow;
+      }
      }
    
   

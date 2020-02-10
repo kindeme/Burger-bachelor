@@ -5,14 +5,10 @@
     menu.addEventListener("click",function(e){
       e.preventDefault();
      let url = menu.getAttribute('href');
-     if(document.URL === url){
-       this.classList.add('active');
-     }
-     else{
-       menu.classList.remove("active");
-     }
-     
-
+     console.log(window.location.href);
+    //  if(document.URL === url){
+    //    this.classList.add('active');
+    //  }
     });
 
   });

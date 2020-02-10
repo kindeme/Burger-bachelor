@@ -1,4 +1,4 @@
-//  active class
+//  active menu
 (function(){
   const menuActive =document.querySelectorAll('.link');
 
@@ -8,12 +8,10 @@
       e.preventDefault();
      let url = menu.getAttribute('href');
      console.log(url);
-     if(document.URL === url){
-       this.classList.toggle('active')
-     }
-
-     
-
+     console.log(window.location.href);
+    //  if(window.location.href.contains(url)){
+    // this.classList.add('active');
+    //  } 
     });
 
   });

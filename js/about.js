@@ -1,3 +1,22 @@
+// active menu
+(function(){
+  const menuActive =document.querySelectorAll('.link');
+
+  // menu active
+  menuActive.forEach(function(menu){
+    menu.addEventListener("click",function(e){
+      e.preventDefault();
+     let url = menu.getAttribute('href');
+    //  console.log(url);
+     if(document.URL === url){
+      this.classList.add('active') ;
+     }
+    });
+
+  });
+
+})();
+
 (function(){
 
   const fixedNav = document.querySelector('.navbar');
