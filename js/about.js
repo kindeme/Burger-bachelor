@@ -134,31 +134,31 @@ nexBtn.addEventListener("click",function(){
        imageHolder.src = allImage[modalCounter];
 
    });
+   
+   });
     //close modal
-   closeIcon.addEventListener("click",function(){
-     container.classList.remove('showModal');
+    closeIcon.addEventListener("click",function(){
+      container.classList.remove('showModal');
+  
+    });
+    //loop throught
+     // loop back
+     modalLeftIcon.addEventListener("click", function() {
+      modalCounter--;
+      if (modalCounter < 0) {
+        modalCounter = allImage.length - 1;
+      }
+     //  console.log(modalCounter);
+      imageHolder.src = allImage[modalCounter];
+    });
  
-   });
-   //loop throught
-    // loop back
-    modalLeftIcon.addEventListener("click", function() {
-     modalCounter--;
-     if (modalCounter < 0) {
-       modalCounter = allImage.length - 1;
+    modalRightIcon.addEventListener("click", function() {
+     modalCounter++;
+     if (modalCounter > allImage.length - 1) {
+       modalCounter = 0;
      }
-    //  console.log(modalCounter);
+     // console.log(modalCounter);
      imageHolder.src = allImage[modalCounter];
-   });
-
-   modalRightIcon.addEventListener("click", function() {
-    modalCounter++;
-    if (modalCounter > allImage.length - 1) {
-      modalCounter = 0;
-    }
-    // console.log(modalCounter);
-    imageHolder.src = allImage[modalCounter];
-  });
-
    });
   })();
   
