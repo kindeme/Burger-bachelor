@@ -1,3 +1,24 @@
+ // menu active
+(function(){
+  const menuActive =document.querySelectorAll('.link');
+  menuActive.forEach(function(menu){
+    menu.addEventListener("click",function(e){
+      e.preventDefault();
+     let url = menu.getAttribute('href');
+     if(document.URL === url){
+       this.classList.add('active');
+     }
+     else{
+       menu.classList.remove("active");
+     }
+     
+
+    });
+
+  });
+
+})();
+
 (function(){
 
   const fixedNav = document.querySelector('.navbar');
@@ -5,16 +26,6 @@
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
    const menuActive =document.querySelectorAll('.links')
-
-   // menu active
-   menuActive.forEach(function(menu){
-     menu.addEventListener("click",function(e){
-      menuActive.forEach(btn => btn.classList.rremove('active'));
-      this.classList.add('active')
-
-     });
-
-   });
 
  // Fixed nav on scroll
 window.addEventListener('scroll',function(){
