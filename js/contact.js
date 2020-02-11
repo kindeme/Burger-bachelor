@@ -7,25 +7,25 @@ console.log(window.location.href);
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
    const menuActive =document.querySelectorAll('.links')
-   const menuActive =document.querySelectorAll('.link');
+  //  const menuActive =document.querySelectorAll('.link');
 
-   // Active menu
+  //  // Active menu
    
-   menuActive.forEach(function(menu){
-         menu.addEventListener("click",function(e){
-           e.preventDefault();
-          let url = menu.getAttribute('href');
-          let mainUrl = window.location.href;
-          let number = mainUrl.indexOf(url);
-          console.log(number);
-          if(url === mainUrl.slice(22)){
-            menu.classList.add('active');
-          }else{
-           menu.classList.remove('active');
-          }
+  //  menuActive.forEach(function(menu){
+  //        menu.addEventListener("click",function(e){
+  //          e.preventDefault();
+  //         let url = menu.getAttribute('href');
+  //         let mainUrl = window.location.href;
+  //         let number = mainUrl.indexOf(url);
+  //         console.log(number);
+  //         if(url === mainUrl.slice(22)){
+  //           this.classList.add('active');
+  //         }else{
+  //          this.classList.remove('active');
+  //         }
          
-         })
-       });
+  //        })
+  //      });
  // Fixed nav on scroll
 window.addEventListener('scroll',function(){
 

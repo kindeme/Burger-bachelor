@@ -7,21 +7,22 @@
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
    const menuActive =document.querySelectorAll('.links')
+   let mainUrl = window.location.href;
    const menuActive =document.querySelectorAll('.link');
 
-   // Active menu
+  //  // Active menu
    
    menuActive.forEach(function(menu){
          menu.addEventListener("click",function(e){
            e.preventDefault();
           let url = menu.getAttribute('href');
-          let mainUrl = window.location.href;
+         
           let number = mainUrl.indexOf(url);
           console.log(number);
           if(url === mainUrl.slice(22)){
-            menu.classList.add('active');
+            this.classList.add('active');
           }else{
-           menu.classList.remove('active');
+           this.classList.remove('active');
           }
          
          })
