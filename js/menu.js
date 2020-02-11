@@ -1,17 +1,17 @@
  // menu active
-(function(){
-  const menuActive =document.querySelectorAll('.link');
-  menuActive.forEach(function(menu){
-    menu.addEventListener("click",function(e){
-      e.preventDefault();
-     let url = menu.getAttribute('href');
-     console.log(window.location.href);
+// (function(){
+//   const menuActive =document.querySelectorAll('.link');
+//   menuActive.forEach(function(menu){
+//     menu.addEventListener("click",function(e){
+//       e.preventDefault();
+//      let url = menu.getAttribute('href');
+//      console.log(window.location.href);
  
-    });
+//     });
 
-  });
+//   });
 
-})();
+// })();
 
 (function(){
 

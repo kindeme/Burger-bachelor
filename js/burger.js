@@ -1,19 +1,19 @@
 //  active menu
-(function(){
-  const menuActive =document.querySelectorAll('.link');
+// (function(){
+//   const menuActive =document.querySelectorAll('.link');
 
-  // menu active
-  menuActive.forEach(function(menu){
-    menu.addEventListener("click",function(e){
-      e.preventDefault();
-     let url = menu.getAttribute('href');
-     console.log(url);
-     console.log(window.location.href);
-    });
+//   // menu active
+//   menuActive.forEach(function(menu){
+//     menu.addEventListener("click",function(e){
+//       e.preventDefault();
+//      let url = menu.getAttribute('href');
+//      console.log(url);
+//      console.log(window.location.href);
+//     });
 
-  });
+//   });
 
-})();
+// })();
 
 // // fixed NAvigation function
 
