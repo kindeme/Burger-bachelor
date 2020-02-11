@@ -1,21 +1,22 @@
 // active menu
-(function(){
-  const menuActive =document.querySelectorAll('.link');
+// (function(){
+//   const menuActive =document.querySelectorAll('.link');
 
-  // menu active
-  menuActive.forEach(function(menu){
-    menu.addEventListener("click",function(e){
-      e.preventDefault();
-     let url = menu.getAttribute('href');
-    //  console.log(url);
-     if(document.URL === url){
-      this.classList.add('active') ;
-     }
-    });
+//   // menu active
+//   menuActive.forEach(function(menu){
+//     menu.addEventListener("click",function(e){
+//       e.preventDefault();
+//      let url = menu.getAttribute('href');
+//     //  console.log(url);
+//      if(document.URL === url){
+//       this.classList.add('active') ;
+//      }
+//     });
 
-  });
+//   });
 
-})();
+// })();
+console.log(window.location.href);
 
 (function(){
 
@@ -24,6 +25,25 @@
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
    const menuActive =document.querySelectorAll('.links')
+   const menuActive =document.querySelectorAll('.link');
+
+   // Active menu
+   
+   menuActive.forEach(function(menu){
+         menu.addEventListener("click",function(e){
+           e.preventDefault();
+          let url = menu.getAttribute('href');
+          let mainUrl = window.location.href;
+          let number = mainUrl.indexOf(url);
+          console.log(number);
+          if(url === mainUrl.slice(22)){
+            menu.classList.add('active');
+          }else{
+           menu.classList.remove('active');
+          }
+         
+         })
+       });
  // Fixed nav on scroll
 window.addEventListener('scroll',function(){
 

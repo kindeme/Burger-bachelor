@@ -17,13 +17,32 @@
 
 // // fixed NAvigation function
 
+
 (function(){
   
   const fixedNav = document.querySelector('.navbar');
   const copydate = document.querySelector('#date');
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
+   const menuActive =document.querySelectorAll('.link');
 
+// Active menu
+
+menuActive.forEach(function(menu){
+      menu.addEventListener("click",function(e){
+        e.preventDefault();
+       let url = menu.getAttribute('href');
+       let mainUrl = window.location.href;
+       let number = mainUrl.indexOf(url);
+       console.log(number);
+       if(url === mainUrl.slice(22)){
+         menu.classList.add('active');
+       }else{
+        menu.classList.remove('active');
+       }
+      
+      })
+    });
 
  // Fixed nav on scroll
 window.addEventListener('scroll',function(){
