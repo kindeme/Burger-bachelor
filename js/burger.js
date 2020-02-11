@@ -9,9 +9,6 @@
      let url = menu.getAttribute('href');
      console.log(url);
      console.log(window.location.href);
-    //  if(window.location.href.contains(url)){
-    // this.classList.add('active');
-    //  } 
     });
 
   });

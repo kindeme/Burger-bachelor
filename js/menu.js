@@ -6,9 +6,7 @@
       e.preventDefault();
      let url = menu.getAttribute('href');
      console.log(window.location.href);
-    //  if(document.URL === url){
-    //    this.classList.add('active');
-    //  }
+ 
     });
 
   });
