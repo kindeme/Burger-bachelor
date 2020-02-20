@@ -141,11 +141,6 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  .active {
-    color: #f2c64d !important;
-    padding-bottom: 0.2rem;
-    border-bottom: 2px solid #f2c64d;
-  }
   .navlinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -229,6 +224,11 @@
   .number:hover {
     background: #f2c64d;
     color: #ffffff;
+  }
+  .active {
+    color: #f2c64d !important;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #f2c64d;
   }
 }
 

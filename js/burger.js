@@ -1,7 +1,10 @@
+// console.log(document.location.href);
+console.log(location.href);
+
 //  active menu
 // (function(){
 //   const menuActive =document.querySelectorAll('.link');
-
+// ()
 //   // menu active
 //   menuActive.forEach(function(menu){
 //     menu.addEventListener("click",function(e){
