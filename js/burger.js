@@ -1,22 +1,6 @@
 // console.log(document.location.href);
 console.log(location.href);
 
-//  active menu
-// (function(){
-//   const menuActive =document.querySelectorAll('.link');
-// ()
-//   // menu active
-//   menuActive.forEach(function(menu){
-//     menu.addEventListener("click",function(e){
-//       e.preventDefault();
-//      let url = menu.getAttribute('href');
-//      console.log(url);
-//      console.log(window.location.href);
-//     });
-
-//   });
-
-// })();
 
 // // fixed NAvigation function
 
@@ -27,25 +11,7 @@ console.log(location.href);
   const copydate = document.querySelector('#date');
   const navBtn = document.querySelector('.nav-button');
    const navLinks = document.querySelector('.navlinks'); 
-//    const menuActive =document.querySelectorAll('.link');
 
-// // Active menu
-
-// menuActive.forEach(function(menu){
-//       menu.addEventListener("click",function(e){
-//         e.preventDefault();
-//        let url = menu.getAttribute('href');
-//        let mainUrl = window.location.href;
-//        let number = mainUrl.indexOf(url);
-//        console.log(number);
-//        if(url === mainUrl.slice(22)){
-//          this.classList.add('active');
-//        }else{
-//         this.classList.remove('active');
-//        }
-      
-//       })
-//     });
 
  // Fixed nav on scroll
 window.addEventListener('scroll',function(){
