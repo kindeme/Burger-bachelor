@@ -80,6 +80,7 @@ $semi-transition: all 1s;
   transition: $main-transition;
   height: 0;
   overflow: hidden;
+  z-index: 5;
   li{
     width: 100%; 
     transition: $semi-transition;

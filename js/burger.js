@@ -1,7 +1,11 @@
 const currentUrl = document.baseURI;
-console.log(currentUrl);
 const links =document.querySelectorAll('.link');
-links
+links.forEach(menu =>{
+  if(currentUrl === menu.href){
+    menu.classList.add('active');
+  }
+});
+
 // // fixed NAvigation function
 
 (function(){

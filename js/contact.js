@@ -1,4 +1,10 @@
-
+const currentUrl = document.baseURI;
+const links =document.querySelectorAll('.link');
+links.forEach(menu =>{
+  if(currentUrl === menu.href){
+    menu.classList.add('active');
+  }
+});
 
 (function(){
 
