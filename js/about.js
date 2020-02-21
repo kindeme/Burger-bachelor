@@ -1,7 +1,10 @@
-// const links =document.querySelectorAll('.link');
-// console.log(links);
 const currentUrl = document.baseURI;
-console.log(currentUrl);
+const links =document.querySelectorAll('.link');
+links.forEach(menu =>{
+  if(currentUrl === menu.href){
+    menu.classList.add('active');
+  }
+});
 (function(){
 
   const fixedNav = document.querySelector('.navbar');
