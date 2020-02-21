@@ -3,6 +3,8 @@ const links =document.querySelectorAll('.link');
 links.forEach(menu =>{
   if(currentUrl === menu.href){
     menu.classList.add('active');
+  }else{
+    menu.classList.remove('active');
   }
 });
 (function(){
