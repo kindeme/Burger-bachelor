@@ -1,4 +1,4 @@
-console.log(window.location.href);
+
 
 (function(){
 

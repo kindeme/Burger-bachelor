@@ -1,9 +1,8 @@
-// console.log(document.location.href);
-console.log(location.href);
-
-
+const currentUrl = document.baseURI;
+console.log(currentUrl);
+const links =document.querySelectorAll('.link');
+links
 // // fixed NAvigation function
-
 
 (function(){
   

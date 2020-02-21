@@ -1,5 +1,7 @@
-
-
+// const links =document.querySelectorAll('.link');
+// console.log(links);
+const currentUrl = document.baseURI;
+console.log(currentUrl);
 (function(){
 
   const fixedNav = document.querySelector('.navbar');
